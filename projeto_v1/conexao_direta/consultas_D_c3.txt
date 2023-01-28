@@ -1,0 +1,200 @@
+SELECT AVG(school.present) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"avg_school_present":{"$avg":"$school.present"}}},{"$project":{"avg_school_present":1,"_id":0}}])
+SELECT AVG(school.absented) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"avg_school_absented":{"$avg":"$school.absented"}}},{"$project":{"avg_school_absented":1,"_id":0}}])
+SELECT AVG(school.released) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"avg_school_released":{"$avg":"$school.released"}}},{"$project":{"avg_school_released":1,"_id":0}}])
+SELECT MIN(school.present) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"min_school_present":{"$min":"$school.present"}}},{"$project":{"min_school_present":1,"_id":0}}])
+SELECT MIN(school.absented) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"min_school_absented":{"$min":"$school.absented"}}},{"$project":{"min_school_absented":1,"_id":0}}])
+SELECT MIN(school.released) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"min_school_released":{"$min":"$school.released"}}},{"$project":{"min_school_released":1,"_id":0}}])
+SELECT MAX(school.present) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"max_school_present":{"$max":"$school.present"}}},{"$project":{"max_school_present":1,"_id":0}}])
+SELECT MAX(school.absented) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"max_school_absented":{"$max":"$school.absented"}}},{"$project":{"max_school_absented":1,"_id":0}}])
+SELECT MAX(school.released) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"max_school_released":{"$max":"$school.released"}}},{"$project":{"max_school_released":1,"_id":0}}])
+SELECT SUM(school.absented) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"sum_school_absented":{"$sum":"$school.absented"}}},{"$project":{"sum_school_absented":1,"_id":0}}])
+SELECT SUM(school.released) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"sum_school_released":{"$sum":"$school.released"}}},{"$project":{"sum_school_released":1,"_id":0}}])
+SELECT SUM(school.present) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"sum_school_present":{"$sum":"$school.present"}}},{"$project":{"sum_school_present":1,"_id":0}}])
+SELECT COUNT(DISTINCT school.enrolled) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"count":{"$sum":1}}},{"$project":{"count":1,"_id":0}}])
+SELECT AVG(school.present) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"avg_school_present":{"$avg":"$school.present"}}},{"$project":{"avg_school_present":1,"_id":0}}])
+SELECT AVG(school.absented) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"avg_school_absented":{"$avg":"$school.absented"}}},{"$project":{"avg_school_absented":1,"_id":0}}])
+SELECT AVG(school.released) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"avg_school_released":{"$avg":"$school.released"}}},{"$project":{"avg_school_released":1,"_id":0}}])
+SELECT MIN(school.present) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"min_school_present":{"$min":"$school.present"}}},{"$project":{"min_school_present":1,"_id":0}}])
+SELECT MIN(school.absented) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"min_school_absented":{"$min":"$school.absented"}}},{"$project":{"min_school_absented":1,"_id":0}}])
+SELECT MIN(school.released) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"min_school_released":{"$min":"$school.released"}}},{"$project":{"min_school_released":1,"_id":0}}])
+SELECT MAX(school.present) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"max_school_present":{"$max":"$school.present"}}},{"$project":{"max_school_present":1,"_id":0}}])
+SELECT MAX(school.absented) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"max_school_absented":{"$max":"$school.absented"}}},{"$project":{"max_school_absented":1,"_id":0}}])
+SELECT MAX(school.released) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"max_school_released":{"$max":"$school.released"}}},{"$project":{"max_school_released":1,"_id":0}}])
+SELECT SUM(school.absented) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"sum_school_absented":{"$sum":"$school.absented"}}},{"$project":{"sum_school_absented":1,"_id":0}}])
+SELECT SUM(school.released) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"sum_school_released":{"$sum":"$school.released"}}},{"$project":{"sum_school_released":1,"_id":0}}])
+SELECT SUM(school.present) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"sum_school_present":{"$sum":"$school.present"}}},{"$project":{"sum_school_present":1,"_id":0}}])
+SELECT COUNT(DISTINCT school.enrolled) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"count":{"$sum":1}}},{"$project":{"count":1,"_id":0}}])
+SELECT AVG(school.present) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"avg_school_present":{"$avg":"$school.present"}}},{"$project":{"avg_school_present":1,"_id":0}}])
+SELECT AVG(school.absented) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"avg_school_absented":{"$avg":"$school.absented"}}},{"$project":{"avg_school_absented":1,"_id":0}}])
+SELECT AVG(school.released) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"avg_school_released":{"$avg":"$school.released"}}},{"$project":{"avg_school_released":1,"_id":0}}])
+SELECT MIN(school.present) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"min_school_present":{"$min":"$school.present"}}},{"$project":{"min_school_present":1,"_id":0}}])
+SELECT MIN(school.absented) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"min_school_absented":{"$min":"$school.absented"}}},{"$project":{"min_school_absented":1,"_id":0}}])
+SELECT MIN(school.released) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"min_school_released":{"$min":"$school.released"}}},{"$project":{"min_school_released":1,"_id":0}}])
+SELECT MAX(school.present) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"max_school_present":{"$max":"$school.present"}}},{"$project":{"max_school_present":1,"_id":0}}])
+SELECT MAX(school.absented) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"max_school_absented":{"$max":"$school.absented"}}},{"$project":{"max_school_absented":1,"_id":0}}])
+SELECT MAX(school.released) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"max_school_released":{"$max":"$school.released"}}},{"$project":{"max_school_released":1,"_id":0}}])
+SELECT SUM(school.absented) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"sum_school_absented":{"$sum":"$school.absented"}}},{"$project":{"sum_school_absented":1,"_id":0}}])
+SELECT SUM(school.released) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"sum_school_released":{"$sum":"$school.released"}}},{"$project":{"sum_school_released":1,"_id":0}}])
+SELECT SUM(school.present) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"sum_school_present":{"$sum":"$school.present"}}},{"$project":{"sum_school_present":1,"_id":0}}])
+SELECT COUNT(DISTINCT school.enrolled) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"count":{"$sum":1}}},{"$project":{"count":1,"_id":0}}])
+SELECT AVG(school.present) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"avg_school_present":{"$avg":"$school.present"}}},{"$project":{"avg_school_present":1,"_id":0}}])
+SELECT AVG(school.absented) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"avg_school_absented":{"$avg":"$school.absented"}}},{"$project":{"avg_school_absented":1,"_id":0}}])
+SELECT AVG(school.released) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"avg_school_released":{"$avg":"$school.released"}}},{"$project":{"avg_school_released":1,"_id":0}}])
+SELECT MIN(school.present) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"min_school_present":{"$min":"$school.present"}}},{"$project":{"min_school_present":1,"_id":0}}])
+SELECT MIN(school.absented) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"min_school_absented":{"$min":"$school.absented"}}},{"$project":{"min_school_absented":1,"_id":0}}])
+SELECT MIN(school.released) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"min_school_released":{"$min":"$school.released"}}},{"$project":{"min_school_released":1,"_id":0}}])
+SELECT MAX(school.present) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"max_school_present":{"$max":"$school.present"}}},{"$project":{"max_school_present":1,"_id":0}}])
+SELECT MAX(school.absented) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"max_school_absented":{"$max":"$school.absented"}}},{"$project":{"max_school_absented":1,"_id":0}}])
+SELECT MAX(school.released) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"max_school_released":{"$max":"$school.released"}}},{"$project":{"max_school_released":1,"_id":0}}])
+SELECT SUM(school.absented) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"sum_school_absented":{"$sum":"$school.absented"}}},{"$project":{"sum_school_absented":1,"_id":0}}])
+SELECT SUM(school.released) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"sum_school_released":{"$sum":"$school.released"}}},{"$project":{"sum_school_released":1,"_id":0}}])
+SELECT SUM(school.present) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"sum_school_present":{"$sum":"$school.present"}}},{"$project":{"sum_school_present":1,"_id":0}}])
+SELECT COUNT(DISTINCT school.enrolled) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"count":{"$sum":1}}},{"$project":{"count":1,"_id":0}}])
+SELECT AVG(school.present) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"avg_school_present":{"$avg":"$school.present"}}},{"$project":{"avg_school_present":1,"_id":0}}])
+SELECT AVG(school.absented) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"avg_school_absented":{"$avg":"$school.absented"}}},{"$project":{"avg_school_absented":1,"_id":0}}])
+SELECT AVG(school.released) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"avg_school_released":{"$avg":"$school.released"}}},{"$project":{"avg_school_released":1,"_id":0}}])
+SELECT MIN(school.present) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"min_school_present":{"$min":"$school.present"}}},{"$project":{"min_school_present":1,"_id":0}}])
+SELECT MIN(school.absented) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"min_school_absented":{"$min":"$school.absented"}}},{"$project":{"min_school_absented":1,"_id":0}}])
+SELECT MIN(school.released) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"min_school_released":{"$min":"$school.released"}}},{"$project":{"min_school_released":1,"_id":0}}])
+SELECT MAX(school.present) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"max_school_present":{"$max":"$school.present"}}},{"$project":{"max_school_present":1,"_id":0}}])
+SELECT MAX(school.absented) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"max_school_absented":{"$max":"$school.absented"}}},{"$project":{"max_school_absented":1,"_id":0}}])
+SELECT MAX(school.released) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"max_school_released":{"$max":"$school.released"}}},{"$project":{"max_school_released":1,"_id":0}}])
+SELECT SUM(school.absented) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"sum_school_absented":{"$sum":"$school.absented"}}},{"$project":{"sum_school_absented":1,"_id":0}}])
+SELECT SUM(school.released) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"sum_school_released":{"$sum":"$school.released"}}},{"$project":{"sum_school_released":1,"_id":0}}])
+SELECT SUM(school.present) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"sum_school_present":{"$sum":"$school.present"}}},{"$project":{"sum_school_present":1,"_id":0}}])
+SELECT COUNT(DISTINCT school.enrolled) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"count":{"$sum":1}}},{"$project":{"count":1,"_id":0}}])
+SELECT AVG(school.present) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"avg_school_present":{"$avg":"$school.present"}}},{"$project":{"avg_school_present":1,"_id":0}}])
+SELECT AVG(school.absented) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"avg_school_absented":{"$avg":"$school.absented"}}},{"$project":{"avg_school_absented":1,"_id":0}}])
+SELECT AVG(school.released) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"avg_school_released":{"$avg":"$school.released"}}},{"$project":{"avg_school_released":1,"_id":0}}])
+SELECT MIN(school.present) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"min_school_present":{"$min":"$school.present"}}},{"$project":{"min_school_present":1,"_id":0}}])
+SELECT MIN(school.absented) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"min_school_absented":{"$min":"$school.absented"}}},{"$project":{"min_school_absented":1,"_id":0}}])
+SELECT MIN(school.released) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"min_school_released":{"$min":"$school.released"}}},{"$project":{"min_school_released":1,"_id":0}}])
+SELECT MAX(school.present) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"max_school_present":{"$max":"$school.present"}}},{"$project":{"max_school_present":1,"_id":0}}])
+SELECT MAX(school.absented) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"max_school_absented":{"$max":"$school.absented"}}},{"$project":{"max_school_absented":1,"_id":0}}])
+SELECT MAX(school.released) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"max_school_released":{"$max":"$school.released"}}},{"$project":{"max_school_released":1,"_id":0}}])
+SELECT SUM(school.absented) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"sum_school_absented":{"$sum":"$school.absented"}}},{"$project":{"sum_school_absented":1,"_id":0}}])
+SELECT SUM(school.released) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"sum_school_released":{"$sum":"$school.released"}}},{"$project":{"sum_school_released":1,"_id":0}}])
+SELECT SUM(school.present) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"sum_school_present":{"$sum":"$school.present"}}},{"$project":{"sum_school_present":1,"_id":0}}])
+SELECT COUNT(DISTINCT school.enrolled) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"count":{"$sum":1}}},{"$project":{"count":1,"_id":0}}])
+SELECT AVG(school.present) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"avg_school_present":{"$avg":"$school.present"}}},{"$project":{"avg_school_present":1,"_id":0}}])
+SELECT AVG(school.absented) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"avg_school_absented":{"$avg":"$school.absented"}}},{"$project":{"avg_school_absented":1,"_id":0}}])
+SELECT AVG(school.released) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"avg_school_released":{"$avg":"$school.released"}}},{"$project":{"avg_school_released":1,"_id":0}}])
+SELECT MIN(school.present) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"min_school_present":{"$min":"$school.present"}}},{"$project":{"min_school_present":1,"_id":0}}])
+SELECT MIN(school.absented) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"min_school_absented":{"$min":"$school.absented"}}},{"$project":{"min_school_absented":1,"_id":0}}])
+SELECT MIN(school.released) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"min_school_released":{"$min":"$school.released"}}},{"$project":{"min_school_released":1,"_id":0}}])
+SELECT MAX(school.present) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"max_school_present":{"$max":"$school.present"}}},{"$project":{"max_school_present":1,"_id":0}}])
+SELECT MAX(school.absented) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"max_school_absented":{"$max":"$school.absented"}}},{"$project":{"max_school_absented":1,"_id":0}}])
+SELECT MAX(school.released) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"max_school_released":{"$max":"$school.released"}}},{"$project":{"max_school_released":1,"_id":0}}])
+SELECT SUM(school.absented) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"sum_school_absented":{"$sum":"$school.absented"}}},{"$project":{"sum_school_absented":1,"_id":0}}])
+SELECT SUM(school.released) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"sum_school_released":{"$sum":"$school.released"}}},{"$project":{"sum_school_released":1,"_id":0}}])
+SELECT SUM(school.present) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"sum_school_present":{"$sum":"$school.present"}}},{"$project":{"sum_school_present":1,"_id":0}}])
+SELECT COUNT(DISTINCT school.enrolled) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"count":{"$sum":1}}},{"$project":{"count":1,"_id":0}}])
+SELECT AVG(school.present) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"avg_school_present":{"$avg":"$school.present"}}},{"$project":{"avg_school_present":1,"_id":0}}])
+SELECT AVG(school.absented) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"avg_school_absented":{"$avg":"$school.absented"}}},{"$project":{"avg_school_absented":1,"_id":0}}])
+SELECT AVG(school.released) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"avg_school_released":{"$avg":"$school.released"}}},{"$project":{"avg_school_released":1,"_id":0}}])
+SELECT MIN(school.present) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"min_school_present":{"$min":"$school.present"}}},{"$project":{"min_school_present":1,"_id":0}}])
+SELECT MIN(school.absented) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"min_school_absented":{"$min":"$school.absented"}}},{"$project":{"min_school_absented":1,"_id":0}}])
+SELECT MIN(school.released) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"min_school_released":{"$min":"$school.released"}}},{"$project":{"min_school_released":1,"_id":0}}])
+SELECT MAX(school.present) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"max_school_present":{"$max":"$school.present"}}},{"$project":{"max_school_present":1,"_id":0}}])
+SELECT MAX(school.absented) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"max_school_absented":{"$max":"$school.absented"}}},{"$project":{"max_school_absented":1,"_id":0}}])
+SELECT MAX(school.released) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"max_school_released":{"$max":"$school.released"}}},{"$project":{"max_school_released":1,"_id":0}}])

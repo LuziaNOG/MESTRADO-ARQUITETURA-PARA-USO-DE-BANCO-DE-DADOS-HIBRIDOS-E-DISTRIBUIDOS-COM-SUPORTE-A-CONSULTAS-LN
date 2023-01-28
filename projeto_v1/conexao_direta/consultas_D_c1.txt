@@ -1,0 +1,2 @@
+SELECT AVG(school.present) FROM school;
+db.school.aggregate([{"$group":{"_id":{},"avg_school_present":{"$avg":"$school.present"}}},{"$project":{"avg_school_present":1,"_id":0}}])
